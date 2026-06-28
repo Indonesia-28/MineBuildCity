@@ -1,0 +1,17 @@
+{
+  "name": "minebuildcity",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Netlify-ready Minecraft city build planner.",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node scripts/serve.js"
+  },
+  "keywords": [
+    "minecraft",
+    "city",
+    "planner",
+    "netlify"
+  ],
+  "license": "MIT"
+}
