@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plan a Minecraft city build with district ideas, block palettes, milestones, and a printable checklist."
+    />
+    <title>Minecraft City Build Planner</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Primary navigation">
+        <a class="logo" href="#top" aria-label="Minecraft City Build home">
+          <span class="logo-cube" aria-hidden="true"></span>
+          MineBuildCity
+        </a>
+        <div class="nav-links">
+          <a href="#districts">Districts</a>
+          <a href="#palette">Palette</a>
+          <a href="#checklist">Checklist</a>
+        </div>
+      </nav>
+
+      <section id="top" class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Netlify-ready city planner</p>
+          <h1>Design a Minecraft city build from spawn to skyline.</h1>
+          <p>
+            Pick districts, balance survival-friendly materials, and track the big build phases
+            before you place the first block.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#districts">Plan the city</a>
+            <a class="button secondary" href="#checklist">View checklist</a>
+          </div>
+        </div>
+        <div class="city-card" aria-label="Minecraft city skyline preview">
+          <div class="skyline" aria-hidden="true">
+            <span class="tower tower-1"></span>
+            <span class="tower tower-2"></span>
+            <span class="tower tower-3"></span>
+            <span class="tower tower-4"></span>
+            <span class="tower tower-5"></span>
+          </div>
+          <div class="stats">
+            <div><strong>8</strong><span>district ideas</span></div>
+            <div><strong>4</strong><span>build phases</span></div>
+            <div><strong>100%</strong><span>static deploy</span></div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="districts" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">District generator</p>
+          <h2>Choose the next neighborhood to build.</h2>
+          <p>Select a district card to add it to your city plan.</p>
+        </div>
+        <div class="district-grid" id="districtGrid"></div>
+      </section>
+
+      <section id="palette" class="section split-section">
+        <div>
+          <p class="eyebrow">Block palette</p>
+          <h2>Keep the build cohesive.</h2>
+          <p>
+            A shared palette makes roads, roofs, trim, and public spaces feel like one city
+            instead of separate builds. Swap blocks based on biome and survival progress.
+          </p>
+        </div>
+        <div class="palette-list" id="paletteList"></div>
+      </section>
+
+      <section id="checklist" class="section checklist-section">
+        <div class="section-heading">
+          <p class="eyebrow">Build tracker</p>
+          <h2>City launch checklist</h2>
+          <p>Tick off milestones as your Minecraft city goes from rough plan to finished world.</p>
+        </div>
+        <form class="checklist" id="checklistForm"></form>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built as a static Minecraft City Build planner for Netlify deployment.</p>
+    </footer>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
